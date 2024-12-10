@@ -8,15 +8,15 @@
 name: Build
 
 on: 
-   release:
-     types: [published]
+  # release:
+  #   types: [published]
 
   # push:
   #  branches: 
   #    - master
 
   schedule:
-   - cron: 0 0 7,29 * *
+   - cron: 0 0 1,16 * *
   
   watch:
    types: [started]
@@ -27,7 +27,7 @@ jobs:
 
     strategy:    
       matrix:
-        config: [AX6, x86_64]
+        config: [N1, AX6, x86_64]
         # config: [CR6608, K2P, x86_64, AX6S]
         # config: [x86_64]
 
