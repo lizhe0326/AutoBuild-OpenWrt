@@ -12,6 +12,8 @@ sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 
 cp ../x86_64.config .config
+cp ../AX6.config .config
+cp ../N1.config .config
 make defconfig
 make menuconfig
 # ./scripts/diffconfig.sh > ../diffconfig
