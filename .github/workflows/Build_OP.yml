@@ -27,7 +27,7 @@ jobs:
 
     strategy:    
       matrix:
-        config: [AX6, x86_64, N1]
+        config: [AX6, x86_64]
         # config: [CR6608, K2P, x86_64, AX6S]
         # config: [x86_64]
 
